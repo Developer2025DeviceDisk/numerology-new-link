@@ -32,7 +32,7 @@ const products = [
     },
     {
         id: 4,
-        name: "Tarot Deck - Mysta Edition",
+        name: "Tarot Deck - Mahakal Edition",
         price: "$35.00",
         category: "Tools",
         rating: 5,

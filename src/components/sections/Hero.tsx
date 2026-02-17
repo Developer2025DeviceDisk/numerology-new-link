@@ -24,36 +24,36 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="space-y-8 md:pr-10"
                 >
-                    <div className="text-xs font-bold tracking-[0.2em] text-[#C5A065] uppercase pl-1">
+                    <div className="text-xs font-bold tracking-[0.2em] text-[#C5A065] uppercase pl-1 text-blue-400">
                         Consultation For Free
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-serif font-medium leading-[0.9] text-gray-900">
+                    <h1 className="text-6xl md:text-8xl font-serif font-medium leading-[0.9] text-blue-800">
                         Infinite power of <br />
                         <span className="italic">numerology</span>
                     </h1>
 
-                    <p className="text-lg text-gray-600 max-w-md leading-relaxed pl-1">
+                    <p className="text-lg text-blue-600 max-w-md leading-relaxed pl-1">
                         Unlock the hidden meaning of numbers and discover what destiny holds for you.
                     </p>
 
                     <div className="pt-4 pl-1">
-                        <Button size="lg" variant="primary" className="rounded-none px-12 py-6 text-sm font-bold tracking-wider bg-[#E65100] hover:bg-[#CC4600] shadow-none uppercase">
+                        <Button size="lg" className="rounded-none px-12 py-6 text-sm font-bold tracking-wider !bg-blue-500 hover:bg-[#CC4600] shadow-none uppercase">
                             Read More
                         </Button>
                     </div>
 
                     <div className="flex items-center gap-12 pt-12 pl-1 border-t border-gray-200 mt-12 max-w-md">
                         <div>
-                            <p className="font-serif text-2xl font-bold text-gray-900">85k</p>
+                            <p className="font-serif text-2xl font-bold text-blue-500">85k</p>
                             <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">Happy Clients</p>
                         </div>
                         <div>
-                            <p className="font-serif text-2xl font-bold text-gray-900">12</p>
+                            <p className="font-serif text-2xl font-bold text-blue-500">12</p>
                             <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">Years Experience</p>
                         </div>
                         <div>
-                            <p className="font-serif text-2xl font-bold text-gray-900">5</p>
+                            <p className="font-serif text-2xl font-bold text-blue-500">5</p>
                             <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">Awards Won</p>
                         </div>
                     </div>

@@ -69,7 +69,7 @@ const Services = () => {
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             {service.description}
                         </p>
-                        <a href="#" className="inline-block text-xs font-bold text-white uppercase tracking-wider border-b border-white/20 pb-1 hover:border-white transition-colors">
+                        <a href="#" className="inline-block text-xs font-bold text-white uppercase tracking-wider border-white/20 pb-1 hover:border-white transition-colors !bg-blue-800">
                             Read More
                         </a>
                     </div>

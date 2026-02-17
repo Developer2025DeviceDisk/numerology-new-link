@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Sparkles, Instagram, Twitter, Facebook } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import Button from "../ui/Button";
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
                     {/* Column 1: Brand */}
                     <div className="space-y-6">
                         <Link href="/" className="inline-block">
-                            <span className="text-3xl font-bold text-gray-900 font-serif">Mysta</span>
+                            <span className="text-3xl font-bold text-gray-900 font-serif">Mahakal</span>
                         </Link>
                         <p className="text-gray-600 text-sm leading-relaxed max-w-sm">
                             Reinventing the way of creating websites, we aim to create the most master-peeced WordPress theme available on the market.
@@ -58,14 +58,11 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-[#C5A065]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-500">
                     <div>
-                        <p>&copy; {new Date().getFullYear()} Mysta. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Mahakal. All rights reserved.</p>
                     </div>
 
                     <div className="flex gap-6 md:gap-8 flex-wrap justify-center">
-                        <Link href="/" className="hover:text-gray-900 transition-colors">Home</Link>
                         <Link href="#about" className="hover:text-gray-900 transition-colors">About Us</Link>
-                        <Link href="#team" className="hover:text-gray-900 transition-colors">Our Team</Link>
-                        <Link href="#shop" className="hover:text-gray-900 transition-colors">Shop</Link>
                         <Link href="#" className="hover:text-gray-900 transition-colors">Blog</Link>
                         <Link href="#contact" className="hover:text-gray-900 transition-colors">Contact Us</Link>
                     </div>
