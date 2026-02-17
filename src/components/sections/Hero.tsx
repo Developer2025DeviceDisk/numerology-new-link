@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Button from "../ui/Button";
 import Section from "../ui/Section";
 import { Sparkle, Moon, Star } from "lucide-react";
 
 // Animation variants for numbers - floating up and down
-const floatVariants = {
+const floatVariants: Variants = {
     float1: {
         y: [0, -25, 0],
         transition: {
@@ -46,7 +46,7 @@ const floatVariants = {
 };
 
 // Animation variants for twinkling stars
-const twinkleVariants = {
+const twinkleVariants: Variants = {
     twinkle: {
         opacity: [0.2, 0.8, 0.2],
         scale: [1, 1.2, 1],
@@ -59,7 +59,7 @@ const twinkleVariants = {
 };
 
 // Container variant for staggered children
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -71,7 +71,7 @@ const containerVariants = {
 };
 
 // Child item variant for text elements
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, x: -30 },
     visible: {
         opacity: 1,
@@ -84,26 +84,13 @@ const itemVariants = {
 };
 
 // Sparkle animation variant
-const sparkleVariants = {
+const sparkleVariants: Variants = {
     animate: {
         scale: [1, 1.2, 1],
         rotate: [0, 10, -10, 0],
         opacity: [0.8, 1, 0.8],
         transition: {
             duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut",
-        }
-    }
-};
-
-// SVG path animation
-const pathVariants = {
-    animate: {
-        pathLength: [0, 1],
-        opacity: [0.3, 0.8, 0.3],
-        transition: {
-            duration: 4,
             repeat: Infinity,
             ease: "easeInOut",
         }
@@ -148,14 +135,14 @@ const Hero = () => {
                     animate="visible"
                     className="space-y-8 md:pr-10"
                 >
-                    <motion.div 
+                    <motion.div
                         variants={itemVariants}
                         className="text-xs font-bold tracking-[0.2em] text-[#C5A065] uppercase pl-1 text-blue-400"
                     >
                         Consultation For Free
                     </motion.div>
 
-                    <motion.h1 
+                    <motion.h1
                         variants={itemVariants}
                         className="text-6xl md:text-8xl font-serif font-medium leading-[0.9] text-blue-800"
                     >
@@ -163,14 +150,14 @@ const Hero = () => {
                         <span className="italic">numerology</span>
                     </motion.h1>
 
-                    <motion.p 
+                    <motion.p
                         variants={itemVariants}
                         className="text-lg text-blue-600 max-w-md leading-relaxed pl-1"
                     >
                         Unlock the hidden meaning of numbers and discover what destiny holds for you.
                     </motion.p>
 
-                    <motion.div 
+                    <motion.div
                         variants={itemVariants}
                         className="pt-4 pl-1"
                     >
@@ -179,7 +166,7 @@ const Hero = () => {
                         </Button>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         variants={itemVariants}
                         className="flex items-center gap-12 pt-12 pl-1 border-t border-gray-200 mt-12 max-w-md"
                     >
@@ -210,13 +197,13 @@ const Hero = () => {
 
                         {/* Decorative Lines/Paths with Animation */}
                         <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 600">
-                            <motion.path 
-                                d="M-50,200 Q150,100 250,50 T450,150" 
-                                fill="none" 
-                                stroke="#E07A5F" 
-                                strokeWidth="1.5" 
+                            <motion.path
+                                d="M-50,200 Q150,100 250,50 T450,150"
+                                fill="none"
+                                stroke="#E07A5F"
+                                strokeWidth="1.5"
                                 initial={{ pathLength: 0, opacity: 0.3 }}
-                                animate={{ 
+                                animate={{
                                     pathLength: 1,
                                     opacity: [0.3, 0.8, 0.3],
                                 }}
@@ -225,13 +212,13 @@ const Hero = () => {
                                     opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" }
                                 }}
                             />
-                            <motion.path 
-                                d="M50,550 Q200,450 350,500" 
-                                fill="none" 
-                                stroke="#E07A5F" 
-                                strokeWidth="1.5" 
+                            <motion.path
+                                d="M50,550 Q200,450 350,500"
+                                fill="none"
+                                stroke="#E07A5F"
+                                strokeWidth="1.5"
                                 initial={{ pathLength: 0, opacity: 0.3 }}
-                                animate={{ 
+                                animate={{
                                     pathLength: 1,
                                     opacity: [0.3, 0.8, 0.3],
                                 }}
@@ -243,7 +230,7 @@ const Hero = () => {
                         </svg>
 
                         {/* Floating Numbers with Individual Animations */}
-                        <motion.div 
+                        <motion.div
                             variants={floatVariants}
                             animate="float1"
                             className="absolute top-[12%] left-[18%] text-[#1C1C1C]"
@@ -251,7 +238,7 @@ const Hero = () => {
                             <span className="font-serif text-[180px] leading-none opacity-90 drop-shadow-lg">5</span>
                         </motion.div>
 
-                        <motion.div 
+                        <motion.div
                             variants={floatVariants}
                             animate="float2"
                             className="absolute bottom-[20%] left-[8%] text-[#1C1C1C]"
@@ -259,15 +246,15 @@ const Hero = () => {
                             <span className="font-serif text-[180px] leading-none opacity-90 drop-shadow-lg">4</span>
                         </motion.div>
 
-                        <motion.div 
+                        <motion.div
                             variants={floatVariants}
                             animate="float3"
                             className="absolute bottom-[30%] right-[8%] text-[#1C1C1C]"
                         >
                             <span className="font-serif text-[160px] leading-none opacity-90 drop-shadow-lg">9</span>
                         </motion.div>
-                        
-                        <motion.div 
+
+                        <motion.div
                             variants={floatVariants}
                             animate="float4"
                             className="absolute -bottom-[2%] right-[25%] text-[#1C1C1C]"
@@ -276,7 +263,7 @@ const Hero = () => {
                         </motion.div>
 
                         {/* Enhanced Sparkle with Smooth Animation */}
-                        <motion.div 
+                        <motion.div
                             variants={sparkleVariants}
                             animate="animate"
                             className="absolute top-[32%] left-[32%]"
