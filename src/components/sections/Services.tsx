@@ -50,10 +50,10 @@ const Services = () => {
     return (
         <Section id="services" className="bg-[#1A1A2E] py-20 md:py-32">
             <div className="text-center mb-16 space-y-4">
-                <div className="text-xs font-bold tracking-[0.2em] text-[#C5A065] uppercase">
+                <div className="text-xs font-bold tracking-[0.2em] text-blue-500 uppercase">
                     Our Services
                 </div>
-                <h2 className="text-4xl md:text-5xl font-medium mb-4 font-serif text-white">
+                <h2 className="text-4xl md:text-5xl font-medium mb-4 font-serif text-grey-00">
                     We explain what each <br />
                     <span className="italic">number means</span>
                 </h2>
@@ -61,15 +61,15 @@ const Services = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, index) => (
-                    <div key={index} className="group p-8 border border-white/5 bg-[#1F1F35] hover:bg-[#252540] transition-colors duration-300 rounded-sm">
-                        <div className="w-10 h-10 mb-6 text-[#C5A065]">
+                    <div key={index} className="group p-8 border border-grey/5 bg-grey ">
+                        <div className="w-10 h-10 mb-6 text-blue-400">
                             {service.icon}
                         </div>
-                        <h3 className="text-xl font-bold mb-4 text-white font-serif">{service.title}</h3>
-                        <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                        <h3 className="text-xl font-bold mb-4 text-blue-800 font-serif">{service.title}</h3>
+                        <p className="text-black text-sm leading-relaxed mb-6">
                             {service.description}
                         </p>
-                        <a href="#" className="inline-block text-xs font-bold text-white uppercase tracking-wider border-white/20 pb-1 hover:border-white transition-colors !bg-blue-800">
+                        <a href="#" className="inline-block text-xs font-bold text-black uppercase tracking-wider border-white/20 pb-1 hover:border-white transition-colors">
                             Read More
                         </a>
                     </div>

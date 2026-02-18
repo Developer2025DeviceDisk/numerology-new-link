@@ -40,14 +40,14 @@ const FAQ = () => {
                 {/* Right - Accordion */}
                 <div className="space-y-10">
                     <div className="space-y-4">
-                        <div className="text-xs font-bold tracking-[0.2em] text-[#C5A065] uppercase">
+                        <div className="text-xs font-bold tracking-[0.2em] text-blue-500 uppercase">
                             Commmon Questions
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-medium font-serif text-gray-900">
+                        <h2 className="text-4xl md:text-5xl font-medium font-serif text-blue-800">
                             Feel free to ask <br />
                             <span className="italic">more questions</span>
                         </h2>
-                        <p className="text-gray-500 text-sm">
+                        <p className="text-blue-400 text-sm">
                             Can't find the answer you're looking for? Reach out to our customer support team.
                         </p>
                     </div>
@@ -91,7 +91,7 @@ const FAQ = () => {
                     </div>
 
                     <div className="pt-4">
-                        <Button variant="primary" className="rounded-none bg-[#1C1C1C] text-white hover:bg-gray-800 px-8 py-3 text-xs uppercase tracking-wider font-bold">
+                        <Button variant="primary" className="rounded-none !bg-blue-800 text-white hover:bg-gray-800 px-8 py-3 text-xs uppercase tracking-wider font-bold">
                             Contact Us
                         </Button>
                     </div>
